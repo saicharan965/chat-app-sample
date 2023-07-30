@@ -1,0 +1,7 @@
+<div class="container" style="height: 250px;width: 300px;">
+    <p>{{roomId}} ||| {{message}}</p>
+    <input class="form-control" type="text" [(ngModel)]="roomId">
+    <p class="text-center"><button class="btn btn-success my-2" (click)="join()">Join</button></p>
+    <input class="form-control" type="text" [(ngModel)]="message">
+    <p class="text-center"><button class="btn btn-success my-2" (click)="sendMessage()">Send</button></p>
+</div>
