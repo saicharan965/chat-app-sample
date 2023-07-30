@@ -5,7 +5,7 @@ export interface Message {
 
 export interface User {
     userName: string,
-    phoneNumber: number
+    phoneNumber: string
 }
 
 export interface socketData {

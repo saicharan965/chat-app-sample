@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
   protected login() {
     const user: User = {
       userName: this.loginForm.controls['fullName'].value,
-      phoneNumber: Number(this.loginForm.controls['phoneNumber'].value)
+      phoneNumber: this.loginForm.controls['phoneNumber'].value
     }
     localStorage.setItem('userDetails', JSON.stringify(user))
     this.routeToHome(user)
